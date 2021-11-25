@@ -4,7 +4,7 @@
 // npm install jsdom
 // npm install excel4node
 // npm install pdf-lib
-// node 1_CricinfoExtracter.js --excel=Worldcup.csv --dataDir=worldcup --source=https://www.espncricinfo.com/series/icc-cricket-world-cup-2019-1144415/match-results
+// node CricInfoExtracter.js --excel=Worldcup.csv --dataDir=worldcup --source=https://www.espncricinfo.com/series/icc-cricket-world-cup-2019-1144415/match-results
 
 let minimist = require("minimist");
 let axios = require("axios");
