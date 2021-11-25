@@ -13,4 +13,10 @@ let axiosKaPromise = axios.get(args.source);
 axiosKaPromise.then(function(response){
   let html = response.data;
   //console.log(html);
+  let dom = new jsdom.JSDOM(html);
+  let document = dom.window.document;
+  let macthes=[];
+  let match= {};
+  let matchDiv = document.querySelectorAll("div.match-score-block");
+  //console.log(matchDiv.length); total match mil gye yha !!
 })
